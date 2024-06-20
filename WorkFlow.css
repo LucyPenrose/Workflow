@@ -1,0 +1,313 @@
+html, body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #dcd7e6;
+    margin: 0;
+    padding: 0;
+}
+
+.Side-Menu {
+
+    position: absolute;
+    left: -100px;
+    font-size: 10px;
+    border-radius: 20px;
+    height: 642px;
+    background-color: #f1b1c1;
+    color: #f9e6f2;
+    transition: all 0.3s ease;
+    width: 150px; 
+}
+
+h1 {
+    letter-spacing: 1px;
+    font-size: 16px;
+    padding: 20px;
+    position: relative;
+}
+
+/* Future NAV options, for now, they're just cute */
+
+.Content-Side-Menu p {  
+    position: absolute;
+    font-size: 16px;
+    top: 50px;
+    left: 0px;
+    transition: 0.5s ease;
+}
+
+.Side-Menu:hover {
+    position: absolute;
+    left: -15px; 
+}
+
+.Side-Menu:hover ~ .Task-Bar {
+    margin-left: 145px; 
+}
+
+.Content-Side-Menu
+{
+    position: absolute;
+    left: -15px;
+    transition: 0.3s ease; 
+}
+
+.Side-Menu:hover > .Content-Side-Menu {
+    margin-left: 20px; 
+}
+
+.Side-Menu:hover > .Content-Side-Menu p {
+    margin-left: 20px; 
+}
+
+
+.Side-Menu:hover ~ .Title-Menu {
+    margin-left: 145px; 
+}
+
+
+
+.Title-Menu {
+    margin-left: 60px;
+    margin-right: 60px;
+    text-align: center;
+    color: #f9e6f2;
+    background-color: #d486b8;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+.Task-Bar {
+
+    width: 120px;
+    margin-left: 60px;
+    margin-top: -10px;
+    height: 500px;
+    text-align: center;
+    color: #f9e6f2;
+    background-color: #abbcd6;
+    border-radius: 20px;
+    transition: 0.3s ease;
+    }
+
+    .Task-Bar img {
+        cursor: pointer;
+        padding-bottom: 6px;
+        transition: 0.3s ease; 
+    }
+
+    .Task-Bar img:hover {
+        scale: 1.05;
+    }
+
+
+
+h2 {
+    letter-spacing: 1px;
+    font-size: 26px;
+    margin: 40px auto;
+    padding: 20px;
+    position: relative; 
+    top: -7px;
+}
+
+
+.Version {
+text-align: center;
+font-size: 12px;
+top: 155px;
+right: 60px;
+width: 80px;
+position: absolute;
+color: #f9e6f2;
+
+background-color: #d486b8;
+border-radius: 20px;
+}
+
+h4{
+    margin: 3px;
+    }
+
+
+.Theme{
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    top: 182px;
+    right: 60px;
+    position: absolute;
+    color: #f9e6f2;
+    background-color: #f1b1c1;
+    border-radius: 20px;
+    transition:0.3s ease; 
+    }
+
+    .Theme:hover {
+        scale: 1.1;
+
+    }
+
+h5{
+    margin: 10px;
+    width: 100px;
+    }
+
+ .Notes {
+
+    position: absolute;
+    text-align: center;
+    right: 60px;
+    top: 402px;
+    height: 280px;
+    width: 260px;
+    color: #f9e6f2;
+    background-color: #d486b8;
+    border-radius: 20px;
+    }
+
+    h6 {
+        font-size: 16px;
+        margin-top: 10px;    
+    }
+
+    .Notes p {
+        margin: 5px;
+        margin-top: -30px;
+
+        color: #f9e6f2;
+    font-size: 16px; 
+
+    }
+
+
+
+    /* This is where the Ise- Ahem, I mean Requilted Button is*/
+
+    
+.ReQuilted{
+    cursor: pointer;
+padding-top: 20px;
+padding-bottom: 20px;
+    text-align: center;
+    font-size: 16px;
+    top: 265px;
+    right: 60px;
+    position: absolute;
+    color: #f9e6f2;
+    background-color: #f1b1c1;
+    border-radius: 20px;
+    transition:0.3s ease; 
+    }
+
+    .ReQuilted:hover {
+        scale: 1.1;
+
+    }
+
+
+
+/* This makes me want to jump off a cliff, I can't figure this out and feels so easy, as long as it works I'll figure it out later */
+
+#Hidden-Salja-Menu {
+    position: absolute;
+    top: 183px;
+    left: 190px; 
+    right: 60px; 
+    height: 500px;
+    z-index: 3;
+    border-radius: 20px;
+    text-align: center;
+    color: #f9e6f2;
+    background-color: #8c88c2;
+    transition: 0.3s ease; 
+    display: none;
+}
+
+.csvmenu-visible {
+    display: block !important;
+}
+
+.csvmenu-hidden {
+    display: none;
+}
+
+    
+    textarea {
+        font-family: 'Noto Sans', sans-serif;
+        width: 90%;
+        height: 70%;
+        border-radius: 8px;
+        font-size: 14px;
+        resize: none;
+        margin-bottom: 20px;
+        outline: none;
+        box-sizing: border-box;
+    }
+    
+    #submitsalja-text {
+        z-index: 4;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 8px;
+        border: none;
+        background-color: #ffffff;
+        color: #000;
+        box-sizing: border-box;
+        width: 100px;
+        display: block; 
+        margin: auto; 
+    }
+
+    /* It's so nice I'm making the same mistake twice <3 */
+
+#Hidden-List-Compare{
+    position: absolute;
+    top: 183px;
+    left: 190px; 
+    right: 60px; 
+    height: 500px;
+    z-index: 3;
+    border-radius: 20px;
+    text-align: center;
+    color: #f9e6f2;
+    background-color: #8c88c2;
+    transition: 0.3s ease; 
+    display: none;
+}
+
+.listmenu-visible {
+    display: block !important;
+
+}
+
+.listmenu-hidden {
+    display: none;
+}
+
+
+    textarea {
+        font-family: 'Noto Sans', sans-serif;
+        width: 90%;
+        height: 70%;
+        border-radius: 8px;
+        font-size: 14px;
+        resize: none;
+        margin-bottom: 20px;
+        outline: none;
+        box-sizing: border-box;
+    }
+    
+    #submitlist-text {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 8px;
+        border: none;
+        background-color: #ffffff;
+        color: #000;
+        box-sizing: border-box;
+        width: 100px;
+        display: block; 
+        margin: auto; 
+    }
