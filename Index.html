@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>✰ Triple Star ✰</title>
+    <link rel="stylesheet" href="WorkFlow.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="Box-Things">
+      <div class="Box-Top-Right"></div>
+      <div class="Box-Bottom-Right"></div>
+    </div>
+
+    <div class="Title-Menu-Elements">
+      <div class="Title-Menu">
+        <h1>WORKFLOW</h1>
+      </div>
+      <div class="Version">
+        <h4>V0.1 A</h4>
+      </div>
+    </div>
+
+    <div class="Theme" onclick="SwitchTheme()">
+      <h3>Sea Foam</h3>
+    </div>
+
+    <div class="Side-Menu">
+      <div class="Content-Side-Menu"></div>
+    </div>
+
+    <div class="Task-Bar">
+      <img src="Images/SaljaToCSV.png" onclick="toggleCSVMenu()" />
+      <img src="Images/CompareList.png" onclick="toggleListMenu()" />
+      <img src="Images/MapIcon.png" onclick="togglePostalMenu()" />
+      <img src="Images/TEMP.PNG" />
+      <img src="Images/TEMP.PNG" />
+    </div>
+
+    <div class="ReQuilted" onclick="IsellMainPage()">
+      <h3>ReQuilted</h3>
+    </div>
+
+    <div class="Notes">
+      <h3>Notes</h3>
+      <p>
+        These are notes for the app! You'll find the change logs and planned
+        features here <br />
+        I'm currently moving all my Scripts here and updating them<br /><br />
+        Currently, nothing works :D
+      </p>
+    </div>
+
+    <div id="Hidden-Salja-Menu">
+      <h3>Salja Cart to .CSV File</h3>
+      <textarea
+        id="SaljaPageText"
+        placeholder="Paste the HTML body here for processing"
+      ></textarea>
+      <button id="submitsalja-text">Submit</button>
+    </div>
+
+    <div id="Hidden-List-Compare">
+      <h3>Compare List to Items in Store</h3>
+      <textarea id="RandomList" placeholder="Paste your list here"></textarea>
+      <button id="submitlist-text">Submit</button>
+    </div>
+
+    <div id="Hidden-Postal-Codes">
+      <img src="Images/BigMapIcon.png" />
+      <div class="Postal-Code-Output"></div>
+      <div class="Postal-Code-Search"></div>
+      
+
+    </div>
+
+    <script src="MainPageScripts/SaljaToExcel.js"></script>
+    <script src="MainPageScripts/CompareList.js"></script>
+    <script src="MainPageScripts/PostalCodes.js"></script>
+
+    <script>
+      function IsellMainPage() {
+        window.location.href = "ReQuilted/ReQuilted.html";
+      }
+    </script>
+  </body>
+</html>
