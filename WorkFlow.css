@@ -1,0 +1,305 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Noto Sans', sans-serif;
+    color: #fef3ec;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: radial-gradient(160% 140% at 129% 90%, #421822FF 0%, #060505FF 100%);
+}
+
+
+
+.Title-Menu-Elements {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.Title-Menu {
+    background-color: #ed8da2;
+    width: calc(100% - 220px);
+    margin-left: 140px;
+    margin-right: 7px;
+}
+
+.Version {
+    background-color: #ed8da2;
+    margin-right: 35px;
+}
+
+.Theme {
+    cursor: pointer;
+    position: absolute;
+    top: 130px;
+    right: 35px;
+    width: 160px;
+    background-color: #f6778b;
+    transition:0.3s ease; 
+}
+
+.Theme:hover {
+    transform: scale(1.025);
+}
+
+h3 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0 ;
+    font-size: 18px;
+}
+
+.Side-Menu {
+    align-items: left;
+    top: 35px;
+    width: 112px;
+    height: 700px;
+    margin-left: 20px;
+    position: absolute;
+    background-color: #fef3ec;
+}
+
+.Content-Side-Menu /* Future NAV options, for now, they're just cute */
+{
+    position: absolute;
+    width: 40px;
+    height: 680px;
+    background-color: #4d97a5;
+}
+
+.Task-Bar {
+    top: 130px;
+    width: 120px;
+    height: 605px;
+    margin-left: 140px;
+    position: absolute;
+    background-color: rgba(254, 243, 236, 0.1);
+    }
+
+.Task-Bar img {
+        cursor: pointer;
+        padding-bottom: 6px;
+        transition: 0.3s ease; 
+    }
+
+.Task-Bar img:hover {
+        scale: 1.025;
+}
+
+
+ .Notes {
+    position: absolute;
+    right: 35px;
+    bottom: 35px;
+    height: 270px;
+    width: 270px;
+    color: #fef3ec;
+    background-color: #f6778b;
+    }
+
+    /* This is where the Ise- Ahem, I mean Requilted Button is, so much work on looks just to probably scrap it and turn it into an excel sheet thing T^T*/
+
+    
+.ReQuilted{
+    cursor: pointer;
+    bottom: 313px;
+    right: 35px;
+    width: 160px;
+    position: absolute;
+    background-color: #ed8da2;
+    transition:0.3s ease; 
+    }
+
+    .ReQuilted:hover {
+        scale: 1.025;
+
+    }
+
+
+
+/* This makes me want to jump off a cliff, I can't figure this out and feels so easy, as long as it works I'll figure it out later */
+
+#Hidden-Salja-Menu {
+    position: absolute;
+    top: 183px;
+    left: 190px; 
+    right: 60px; 
+    height: 500px;
+    z-index: 3;
+    border-radius: 20px;
+    color: #fef3ec;
+    background-color: #8c88c2;
+    transition: 0.3s ease; 
+    display: none;
+}
+
+.csvmenu-visible {
+    display: block !important;
+}
+
+.csvmenu-hidden {
+    display: none;
+}
+
+    
+    textarea {
+        width: 90%;
+        height: 70%;
+        border-radius: 8px;
+        resize: none;
+        margin-bottom: 20px;
+        outline: none;
+        box-sizing: border-box;
+    }
+    
+    #submitsalja-text {
+        z-index: 4;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 8px;
+        border: none;
+        background-color: #fef3ec;
+        color: #000;
+        box-sizing: border-box;
+        width: 100px;
+        display: block; 
+        margin: auto; 
+    }
+
+    /* It's so nice I'm making the same mistake twice <3 */
+
+#Hidden-List-Compare{
+    position: absolute;
+    top: 183px;
+    left: 190px; 
+    right: 60px; 
+    height: 500px;
+    z-index: 3;
+    border-radius: 20px;
+    color: #fef3ec;
+    background-color: #8c88c2;
+    transition: 0.3s ease; 
+    display: none;
+}
+
+.listmenu-visible {
+    display: block !important;
+
+}
+
+.listmenu-hidden {
+    display: none;
+}
+
+
+    textarea {
+        width: 90%;
+        height: 70%;
+        border-radius: 8px;
+        resize: none;
+        margin-bottom: 20px;
+        outline: none;
+        box-sizing: border-box;
+    }
+    
+    #submitlist-text {
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 8px;
+        border: none;
+        background-color: #fef3ec;
+        color: #000;
+        box-sizing: border-box;
+        width: 100px;
+        display: block; 
+        margin: auto; 
+    }
+
+    /* This makes me want to jump off a cliff, I can't figure this out and feels so easy, as long as it works I'll figure it out later */
+    #Hidden-Postal-Codes {
+        position: absolute;
+        top: 173px;
+        bottom: 35px;
+        left: 267px;
+        right: 35px;
+        z-index: 3;
+        background-color: rgba(254, 243, 236, 0.1);
+        transition: 0.3s ease;
+        display: none;
+        /* Center children using absolute positioning */
+        text-align: center; /* For centering inline-block elements */
+    }
+    
+    .Hidden-Postal-Codes-visible {
+        display: block !important;
+    }
+    
+    .Hidden-Postal-Codes {
+        display: none;
+    }
+
+    #Hidden-Postal-Codes > img {
+        margin-top: 100px;
+      }
+
+      .Postal-Code-Output {
+        max-width: 581px;
+        height: 100px;
+        position: absolute;
+        bottom: 50px;
+        left: 10px;
+        right: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #fef3ec;
+    }
+    
+    .Postal-Code-Search {
+        height: 35px;
+        position: absolute;
+        bottom: 50px;
+        left: 0px;
+        right: 170px;
+        top: -43px;
+        background-color: #fef3ec;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .Box-Top-Right {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        border-top: #fef3ec solid 15px;
+        border-right: #fef3ec solid 15px;
+        width: 58px;
+        height: 190px;
+
+    }
+
+    .Box-Bottom-Right {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        width: 407px;
+        height: 407px;
+        border-bottom: #fef3ec solid 15px;
+        border-right: #fef3ec solid 15px;
+
+    }

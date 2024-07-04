@@ -1,0 +1,11 @@
+{
+    "name": "Lucy's App",
+    "version": "1.0.0",
+    "main": "main.js",
+    "scripts": {
+      "start": "electron ."
+    },
+    "devDependencies": {
+      "electron": "^22.2.0"
+    }
+  }
